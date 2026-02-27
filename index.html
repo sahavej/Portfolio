@@ -3,117 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Shahwaiz | Freelance Frontend Developer in India</title>
+    <meta name="description" content="Freelance Frontend Developer in India. I create modern, responsive business websites at affordable prices.">
+<meta name="keywords" content="Frontend Developer, Web Developer India, Website Developer Prayagraj, Freelance Web Designer">
+<meta name="author" content="Shahwaiz">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/png" href="favicon-32x32.png">
+<link rel="stylesheet" href="portfolio.css">
 </head>
-<script src="script.js"></script>
-
 <body>
-    <nav class="navbar">
-  <div class="logo">My Portfolio</div>
-  <ul class="nav-links">
-    <li><a href="#home" class="nav-link active">Home</a></li>
-    <li><a href="myprojects.html" class="nav-link">Projects</a></li>
-    <li><a href="#skills" class="nav-link">Skills</a></li>
-    <li><a href="#about" class="nav-link">About</a></li>
-    <li><a href="#contact" class="nav-link">Contact</a></li>
-  </ul>
+    <header>
+        <nav class="navbar" id="navbar">
+<h2 class="logo">Shahwaiz</h2>
+
+<ul class="nav-links" id="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#pricing">Pricing</a></li>
+<li><a href="#contact" class="hire-btn">Hire Me</a></li>
+</ul>
+
+<div class="hamburger" onclick="toggleMenu()">☰</div>
 </nav>
+    </header>
+    <!-- HERO -->
+<section id="home" class="hero">
+<div class="hero-text">
+<h1>Hi, I'm <span>Shahwaiz</span></h1>
+<h2><span id="typing"></span></h2>
+<p>Available for freelance work. Starting at ₹1500.</p>
+<a href="#projects" class="btn">View Projects</a>
+</div>
 
-   <section class="hero">
-    <div class="hero-left">
-        <h1>Shahwaiz</h1>
-        <p>frontend developer focused on building modern, responsive
-            and user-friendly web interfaces.
-        </p>
-        <button class="cta">Lets get Started</button>
-
-        <div class="worked">
-            <span>Worked</span>
-            <div class="logos">
-                <div class="logo-box">ClickUp</div>
-                <div class="logo-box">Dropbox</div>
-                <div class="logo-box">Stripe</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- RIGHT IMAGE -->
-    <div class="hero-right">
-        <img src="shahwaiz.jpeg" alt="Shahwaiz">
-    </div>
+<div class="hero-image">
+<img src="shahwaiz.jpeg" alt="Profile">
+</div>
 </section>
-<!-- SKILLS SECTION -->
-<section class="skills-section" id="skills">
-    <h2 class="section-title">Skills</h2>
-    <p class="section-subtitle">
-        Technologies and tools I use to build websites.
-    </p>
-
-    <div class="skills-container">
-        <div class="skill">HTML5</div>
-        <div class="skill">CSS3</div>
-        <div class="skill">Flexbox</div>
-        <div class="skill">Responsive Design</div>
-        <div class="skill">JavaScript (Basic)</div>
-        <div class="skill">Git & GitHub</div>
-    </div>
+<!-- ABOUT -->
+<section id="about" class="section reveal">
+<h2>About Me</h2>
+<p>I am a Freelance Frontend Developer from India creating modern responsive websites for businesses and startups.</p>
 </section>
-<!-- ABOUT SECTION -->
-<section class="about" id="about">
-    <div class="about-container">
-
-        <div class="about-left">
-            <img src="shahwaiz.jpeg" alt="Shahwaiz">
-        </div>
-
-        <div class="about-right">
-            <h2>About Me</h2>
-            <p>
-                I'm Shahwaiz, a beginner frontend developer passionate about
-                building modern and responsive websites.
-            </p>
-
-            <p>
-                Currently, I'm improving my skills in HTML, CSS, and JavaScript
-                and working on real-world projects to start my career as a web developer.
-            </p>
-
-            <p>
-                My goal is to become a professional developer and work on real client projects.
-            </p>
-        </div>
-
-    </div>
+<!-- SERVICES -->
+<section id="services" class="section dark reveal">
+<h2>My Services</h2>
+<div class="grid">
+<div class="card">
+<h3>Business Website</h3>
+<p>Professional website for shops and startups.</p>
+</div>
+<div class="card">
+<h3>Landing Page</h3>
+<p>High converting landing page for marketing.</p>
+</div>
+<div class="card">
+<h3>Website Redesign</h3>
+<p>Modern upgrade for old websites.</p>
+</div>
+</div>
 </section>
-<!-- CONTACT SECTION -->
+<!-- PROJECTS -->
+<section id="projects" class="section reveal">
+<h2>Projects</h2>
+<div class="grid">
+<div class="card">
+<h3>Restaurant Website</h3>
+<a href="#" class="btn small">Live Demo</a>
+</div>
+<div class="card">
+<h3>Interior Designer</h3>
+<a href="#" class="btn small">Live Demo</a>
+</div>
+<div class="card">
+<h3>Portfolio Website</h3>
+<a href="#" class="btn small">Live Demo</a>
+</div>
+</div>
+</section>
+<!-- PRICING -->
+<section id="pricing" class="section dark reveal">
+<h2>Pricing</h2>
+<div class="grid">
+<div class="price-card">
+<h3>Basic</h3>
+<h2>₹1500</h2>
+<p>1 Page Website</p>
+</div>
+<div class="price-card popular">
+<h3>Standard</h3>
+<h2>₹4000</h2>
+<p>Up to 5 Pages</p>
+</div>
+<div class="price-card">
+<h3>Premium</h3>
+<h2>₹8000</h2>
+<p>Full Website</p>
+</div>
+</div>
+</section>
+<!-- TESTIMONIAL -->
+<section class="section reveal">
+<h2>Client Feedback</h2>
+<div class="grid">
+<div class="card">
+<p>"Great work and fast delivery!"</p>
+</div>
+<div class="card">
+<p>"Very professional design."</p>
+</div>
+</div>
+</section>
 <section class="contact" id="contact">
-    <h2 class="section-title">Get In Touch</h2>
-    <p class="section-subtitle">
-        Have a project or want to work together? Feel free to contact me.
-    </p>
-
-    <div class="contact-container">
-
-        <!-- Contact Info -->
-        <div class="contact-info">
-            <p><strong>Email:</strong> sahvez931@email.com</p>
-            <p><strong>GitHub:</strong> github.com/shahwaiz</p>
-            <p><strong>WhatsApp:</strong> +91 95690 37660</p>
+    <h2 class="contact-title">get in touch</h2>
+    <p class="contact-subtitle">Have a project or want to work together? Feel free to contact me.</p>
+       <div class="contact-container">
+          <div class="contact-info">
+            <p><strong>Email:</strong>sahvez931@gmail.com</p>
+            <p><strong>Github:</strong>sahavej.github.io/portfolio/</p>
+            <p><strong>Whatsapp:</strong>+91 9569037660</p>
+          </div>
+        <!--contact form-->
+          <form class="contact-form">
+             <input type="text" name="name" placeholder="Enter your name" required>
+             <input type="email"  name="email" placeholder="Enter Your Email" required>
+             <textarea rows="5" name="massage"  placeholder="your massage" required></textarea>
+             <button type="submit">send massage</button>
+          </form>
         </div>
-
-        <!-- Contact Form -->
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-
-    </div>
 </section>
+<footer>
+<p>© 2026 Shahwaiz | All Rights Reserved</p>
+</footer>
 
+<a href="https://wa.me/919569037660?text=Hi%20I%20want%20a%20website" class="whatsapp" target="_blank">WhatsApp</a>
+<button id="topBtn" onclick="scrollToTop()">↑</button>
+<script src="script.js"></script>
+<script>
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
 
-
+hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+</script>
 </body>
 </html>
